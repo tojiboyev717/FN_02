@@ -61,7 +61,7 @@ function init() {
         }, 3 * 60 * 1000);
 
         setTimeout(() => {
-            bot.chat('/is warp sell');
+            bot.chat('/is warp sell1');
         }, 1000);
 
         setInterval(() => {
@@ -94,7 +94,7 @@ function init() {
             }
             setTimeout(async () => {
                 await bot.closeWindow(window);
-                bot.chat('/is warp afk');
+                bot.chat('/is warp sell1');
                 bot.chat('/is withdraw money 9999999999999999');
                 bot.chat('/bal');
             }, honeyCount * 20 + 100);
@@ -117,10 +117,10 @@ function init() {
     });
 
     async function withdrawHoney(bot) {
-        bot.chat('/is warp sell');
+        bot.chat('/is warp sell1');
 
         setTimeout(async () => {
-            const chestPosition = new Vec3(-3017, 90, -6343);
+            const chestPosition = new Vec3(604, 88, -6172);
             const chestBlock = bot.blockAt(chestPosition);
             if (!chestBlock || chestBlock.name !== 'chest') {
                 console.log("❌ Chest bloki topilmadi yoki noto‘g‘ri blok.");
